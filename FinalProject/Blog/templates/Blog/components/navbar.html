@@ -4,6 +4,8 @@
     <li><a class="drop" href="{% url 'Post' %}">Posts</a>
         <ul>
         <li><a href="Post/gallery.html">Categories</a></li>
+        {% comment %} aca va un desplegable {% endcomment%}
+
         <li><a href="{% url 'Create Post' %}">Create</a></li>
         <li><a href="{% url 'Links' %}">Useful Links</a></li>
         <li><a href="{% url 'Tutorials' %}">Video Tutorials</a></li>

@@ -63,4 +63,3 @@ def Links(request):
 
 def Tutorials(request):
     return render(request, 'Blog/tutorials.html') 
-
