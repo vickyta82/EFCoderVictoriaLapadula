@@ -1,0 +1,11 @@
+{% extends 'Blog/base.html' %}
+
+{% block main_content %}
+ 
+<h1> {{post.author}} </h1>
+<h2> The title is "{{post.title}}" </h2>
+<h3> Subtitle "{{post.subtitle}}" </h3>
+<p> {{post.post}} </p>
+<p style="font-style: italic; font-size:2em ;color:rgb(102, 9, 188)">Created on: {{post.date}} </p>
+
+{% endblock main_content %}

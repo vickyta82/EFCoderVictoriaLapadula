@@ -1,0 +1,15 @@
+<nav id="mainav" class="fl_right"> 
+    <ul class="clear">
+    <li class="active"><a href="{% url 'home' %}">Home</a></li>
+    <li><a class="drop" href="{% url 'Post' %}">Posts</a>
+        <ul>
+        <li><a href="Post/gallery.html">Categories</a></li>
+        <li><a href="{% url 'Create Post' %}">Create</a></li>
+        <li><a href="{% url 'links' %}">Useful Links</a></li>
+        <li><a href="{% url 'tutorials' %}">Video Tutorials</a></li>
+        </ul>
+    </li>
+    <li class="active"><a href="{% url 'About' %}">About</a></li>
+    {% comment %} <li class="active"><a href="{% url 'Profile' %}">Profile</a></li> {% endcomment %}
+    </ul>
+</nav>
