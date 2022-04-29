@@ -12,6 +12,6 @@ urlpatterns = [
     path('pages', post_view, name="Post"),
     path('page detail/<id>', page_detail, name= "Page detail"),
     path('about/', about, name= "About"),
-    path('tutorials/', tutorials, name="Tutorials"),
-    path('links/', links, name="Useful Links"),
+    path('Tutorials/', Tutorials, name="Tutorials"),
+    path('Links/', Links, name="Links"),
 ]

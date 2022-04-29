@@ -58,10 +58,9 @@ def page_detail(request, id):
 def about(request):
     return render(request, 'Blog/about.html')
 
-def links(request):
+def Links(request):
     return render(request, 'Blog/links.html')    
 
-def tutorials(request):
+def Tutorials(request):
     return render(request, 'Blog/tutorials.html') 
-
 
