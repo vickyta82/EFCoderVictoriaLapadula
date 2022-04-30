@@ -1,6 +1,6 @@
 {% extends 'Account/base.html' %}
 {% block main_content %}
-<div style="background-color: rgb(227, 66, 227)"; class="profileContainer">
+<div style="background-color: rgb(241, 66, 229)"; class="profileContainer">
     <div class="profileInfo">
         <h4>User: {{user.username}}</h4>
         <h4>Last login: {{user.last_login}}</h4>
@@ -22,7 +22,7 @@
         </table>
         <button class="btn btn-primary m-2" type="submit">Confirm</button>
         {% if edit_success %}
-        <h4 style="font-style: italic; color: green;">User data changed successfully!</h4>
+        <h4 style="font-style: italic; color: rgb(9, 23, 9);">User data changed successfully!</h4>
         {% endif %}
     </form>
 </div>

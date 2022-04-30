@@ -1,3 +1,4 @@
+from django import urls
 from django.urls import path
 from Blog.views import *
 
@@ -11,5 +12,6 @@ urlpatterns = [
     path('about/', about, name= "About"),
     path('Tutorials/', Tutorials, name="Tutorials"),
     path('Links/', Links, name="Links"),
-    path('chat', chat, name="Chat")
+    path('chat', chat, name="Chat"),
+    
 ]
