@@ -1,17 +1,16 @@
-<nav id="mainav" class="fl_right"> 
+<nav id="mainav" class="fl_right">
     <ul class="clear">
-    <li class="active"><a href="{% url 'home' %}">Home</a></li>
-    <li><a class="drop" href="{% url 'Post' %}">Posts</a>
-        <ul>
-        <li><a href="Post/gallery.html">Categories</a></li>
-        {% comment %} aca va un desplegable {% endcomment%}
-
-        <li><a href="{% url 'Create Post' %}">Create</a></li>
-        <li><a href="{% url 'Links' %}">Useful Links</a></li>
-        <li><a href="{% url 'Tutorials' %}">Video Tutorials</a></li>
-        </ul>
-    </li>
-    <li class="active"><a href="{% url 'About' %}">About</a></li>
-    {% comment %} <li class="active"><a href="{% url 'Profile' %}">Profile</a></li> {% endcomment %}
+        <li class="active"><a href="{% url 'home' %}" style="text-decoration: none; color: violet;">Home</a></li>
+        <li class="active"><span  style="text-decoration: none; color: violet;">Posts</span>    
+            <ul>
+                <li><a href="{% url 'Post' %}">View all</a></li>
+                <li><a href="{% url 'Create Post' %}">Create</a></li>
+                <li><a href="{% url 'Links' %}">Useful Links</a></li>
+                <li><a href="{% url 'Tutorials' %}">Video Tutorials</a></li>
+            </ul>
+        </li>
+        <li class="active"><a href="{% url 'About' %}"  style="text-decoration: none; color: violet;">About</a></li>
+        <li class="active"><a href="{% url 'Profile' %}"  style="text-decoration: none; color: violet;">Profile</a></li>
+        <li class="active"><a href="{% url 'Chat' %}" style="text-decoration: none; color: violet;">Chat</a></li>
     </ul>
 </nav>

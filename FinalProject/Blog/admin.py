@@ -1,7 +1,5 @@
 from django.contrib import admin
-from Blog.models import Author, post, Category
+from Blog.models import Chat, post
 
-admin.site.register(Author)
+admin.site.register(Chat)
 admin.site.register(post)
-admin.site.register(Category)
-

@@ -7,3 +7,6 @@ class Post (forms.Form):
     img = forms.ImageField()
     post = forms.CharField(max_length=4000, widget=forms.Textarea(attrs={"rows": 12}))
 
+class ChatForm (forms.Form):
+    chat = forms.CharField(max_length=400)
+

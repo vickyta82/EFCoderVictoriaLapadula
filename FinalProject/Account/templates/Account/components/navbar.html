@@ -1,0 +1,16 @@
+<nav id="mainav" class="fl_right">
+    <ul class="clear">
+        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+        <li><span class="drop">Posts</span>
+            <ul>
+                <li><a href="{% url 'Post' %}">View all</a></li>
+                <li><a href="{% url 'Create Post' %}">Create</a></li>
+                <li><a href="{% url 'Links' %}">Useful Links</a></li>
+                <li><a href="{% url 'Tutorials' %}">Video Tutorials</a></li>
+            </ul>
+        </li>
+        <li class="active"><a href="{% url 'About' %}">About</a></li>
+        <li class="active"><a href="{% url 'Profile' %}">Profile</a></li>
+        <li class="active"><a href="{% url 'Chat' %}">Chat</a></li>
+    </ul>
+</nav>
