@@ -66,8 +66,8 @@ def update_post(request, id):
 @login_required
 def remove_post(request, id):
     try:
-        postFinded = post.objects.get(id = id)
-        postFinded.delete()
+        postFound = post.objects.get(id = id)
+        postFound.delete()
         return redirect('Post')
     except Exception as e:
         print(e)

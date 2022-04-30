@@ -1,6 +1,6 @@
 {% extends 'Blog/base.html' %}
 {% block main_content %}
-<div style="display: flex; flex-direction: row; align-items: flex-start; gap: 40px; flex-wrap: wrap; padding: 30px;">
+<div style="background-color: slateblue;"display: flex; flex-direction: row; align-items: flex-start; gap: 40px; flex-wrap: wrap; padding: 30px">
     {% for post in posts %}
         <div class="postContainer">
             <a style="text-decoration: none; color: inherit; overflow: visible; position: relative;" href="{% url 'Page detail' post.id %}">
