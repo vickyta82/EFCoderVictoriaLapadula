@@ -13,4 +13,5 @@ urlpatterns = [
     path('login', log_in, name="Login"),
     path('logout', LogoutView.as_view(template_name="Account/logout.html"), name="Logout"),
     path('avatar_upload', avatar_upload, name="Avatar"),
+    
 ]

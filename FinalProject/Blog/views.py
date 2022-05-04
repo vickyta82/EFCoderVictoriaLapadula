@@ -101,3 +101,4 @@ def chat (request):
             return render(request, 'Blog/chat.html', {"chat_form": chat_form_content, "chat": chat})
     else:
         return render(request, 'Blog/chat.html', {"chat_form": chat_form, "chat": chat})
+
